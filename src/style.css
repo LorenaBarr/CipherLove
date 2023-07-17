@@ -1,0 +1,42 @@
+#root {
+    text-align: center;
+}
+
+@font-face {
+    font-family: 'OCR A Extended';
+    src: url('fonts/OCRAExtended.ttf') format('truetype');
+}
+.title {
+    color:#D4145A;
+    font-family: 'OCR A Extended', sans-serif ;
+}
+
+.Slogan {
+    color: black;
+    font-family: 'OCR A Extended', sans-serif ;
+}
+
+
+
+
+.menu-1 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+.menu-1 ul { 
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    
+}
+
+.menu-1 li {
+    display: inline;
+    margin-right: 30px;
+}
+
