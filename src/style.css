@@ -1,7 +1,17 @@
 #root {
     text-align: center;
 }
+ 
+header {
+    position: relative;
+    width: 10px;
+}
 
+header img {
+    position: relative;
+    top: 20px;
+    left: 20px;
+}
 @font-face {
     font-family: 'OCR A Extended';
     src: url('fonts/OCRAExtended.ttf') format('truetype');
@@ -9,6 +19,7 @@
 .title {
     color:#D4145A;
     font-family: 'OCR A Extended', sans-serif ;
+    size: 20px;
 }
 
 .Slogan {
@@ -19,24 +30,50 @@
 
 
 
-.menu-1 {
+nav.menu-1 {
+    float: right;
+    width: 60px;
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-between;
     align-items: center;
-    justify-content: space-around;
-    padding: 10px;
-}
-
-.menu-1 ul { 
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
     
 }
 
-.menu-1 li {
-    display: inline;
-    margin-right: 30px;
+
+
+nav.menu-1 .list {
+    display: flex;
+     padding: 0;
+    margin: 0;
+    list-style: none;
+    justify-content: flex-start;
+}
+
+nav.menu-1 .list li {
+    margin-left: 10px;
+}
+
+nav.menu-1 .list a {
+    display: block;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+    justify-content: center;
+
+}
+
+nav.menu-1 .list a:hover {
+    border-bottom: 4px solid #D4145A;
+}
+
+#barra {
+    display: none;
+}
+
+nav.menu-1 .icon-bars {
+    display:none;
+    
 }
 
