@@ -1,95 +1,90 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Caesar Cipher</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-    <body>
-      <header>
-          <img src="https://i.ibb.co/YBDF2yN/logocypherlove.png" alt="Logo de la pagina"></header>
-            
-          <nav class="menu-1">
 
-            <input type="checkbox" id="barra">
-              <ul class="list">
-              <li><a href="#CipherLove">Cipher Love</a></li><br>
-              <br>
-              <br>
-              <br>
-              <li><a href="#Cifrar">Cifrar</a></li><br>
-              <br>
-              <br>
-              <br>
-              <li><a href="#Descifrar">Descifrar</a></li><br>
-              <br>
-              <br>
-              <br>
-              </ul>
-              <label for="barra" class="icon-bars">
-                <div class="line"></div>
-                <div class="line"></div>
-                <div class="line"></div>
-              </label>
-           </nav>
-          </header>
+<head>
+  <meta charset="utf-8">
+  <title>Caesar Cipher</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
 
-    <div id="root">
-      <h1 class="title">Cipher Love</h1>
-      <h2 class="Slogan">"Cifra tu amor, descifra tu conexión = Djgsb uv bnps, eftdjgsb uv dpñfyjóñ"</h2> 
-    </div>
+<body>
 
-    <div id="cifrar-usuario">
-      <input type="text" id="mensaje-usuario" placeholder="Escribe tu mensaje a cifrar">
-    </div>
+  <nav class="menu-1">
 
-    <div id="offset-desplegable">
-      <label for="clave">Clave:</label>
-      <select name="clave" id="clave">
-      <option value="1">1</option>
-      <option value="2">2</option>
-      <option value="3">3</option>
-      <option value="4">4</option>
-      <option value="5">5</option>
-      <option value="6">6</option>
-      <option value="7">7</option>
-      <option value="8">8</option>
-      <option value="9">9</option>
-      <option value="10">10</option>
-      <option value="11">11</option>
-      <option value="12">12</option>
-      <option value="13">13</option>
-      <option value="14">14</option>
-      <option value="15">15</option>
-      <option value="16">16</option>
-      <option value="17">17</option>
-      <option value="18">18</option>
-      <option value="19">19</option>
-      <option value="20">20</option>
-      <option value="21">21</option>
-      <option value="22">22</option>
-      <option value="23">23</option>
-      <option value="24">24</option>
-      <option value="25">25</option>
-      <option value="26">26</option>
-    </select>
-    </div>
-    
-    <div id="send-cifrar">
+    <ul class="list">
+      <li><a href="#CipherLove">Cipher Love</a></li><br>
+      <li><a href="#Cifrar">Cifrar</a></li><br>
+      <li><a href="#Descifrar">Descifrar</a></li><br>
+    </ul>
+    <label for="barra" class="icon-bars">
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+    </label>
+  </nav>
+  </header>
+
+  <div id="root">
+    <h1 class="title">Cipher Love</h1>
+    <h2 class="Slogan">"Cifra tu amor, descifra tu conexión = Djgsb uv bnps, eftdjgsb uv dpñfyjóñ"</h2>
+  </div>
+
+  <div id="cifrar-usuario">
+    <input type="text" id="mensaje-usuario" placeholder="Escribe tu mensaje a cifrar">
+
+
+    <div class="alineacion-vertical">
+      <div><label for="clave">Clave:</label>
+        <select name="clave" id="clave">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+          <option value="10">10</option>
+          <option value="11">11</option>
+          <option value="12">12</option>
+          <option value="13">13</option>
+          <option value="14">14</option>
+          <option value="15">15</option>
+          <option value="16">16</option>
+          <option value="17">17</option>
+          <option value="18">18</option>
+          <option value="19">19</option>
+          <option value="20">20</option>
+          <option value="21">21</option>
+          <option value="22">22</option>
+          <option value="23">23</option>
+          <option value="24">24</option>
+          <option value="25">25</option>
+          <option value="26">26</option>
+        </select>
+      </div>
+
+
       <button onclick="cifrar ()">Cifrar</button>
     </div>
-    
-    <h3>Recuerda</h3>
-    <p>Para cifrar o descifrar debes saber la clave secreta.</p><br>
-    <img src="https://st3.depositphotos.com/32927174/34723/v/450/depositphotos_347234448-stock-illustration-glowing-neon-line-mail-message.jpg" alt="icono mensaje cifrado">
-        
-    <div id="descifrar-usuario">
-      <input type="text" id="mensaje-usuario2" placeholder="Escribe tu mensaje a descifrar">
-    </div>
+  </div>
 
-    <div id="offset-desplegable2">
-      <label for="clave2">Clave:</label>
-      <select name="clave2" id="clave2">
+  <div>
+    <label for="mensaje-cifrado">Mensaje Cifrado:</label><br>
+    <input type="text" id="mensaje-cifrado" readonly>
+  </div>
+
+  <h3>Recuerda</h3>
+  <p>Para cifrar o descifrar debes saber la clave secreta.</p><br>
+
+  <div id="descifrar-usuario">
+    <input type="text" id="mensaje-usuario2" placeholder="Escribe tu mensaje a descifrar">
+  </div>
+
+  <div id="offset-desplegable2">
+    <label for="clave2">Clave:</label>
+    <select name="clave2" id="clave2">
       <option value="1">1</option>
       <option value="2">2</option>
       <option value="3">3</option>
@@ -117,12 +112,16 @@
       <option value="25">25</option>
       <option value="26">26</option>
     </select>
-    </div>
-    <div id="send-descifrar">
-      <button onclick="descifrar ()">Descifrar</button>
-    </div>
-    
-    
-    <script src="index.js" type="module"></script>
-  </body>
+  </div>
+  <div id="send-descifrar">
+    <button onclick="descifrar ()">Descifrar</button>
+  </div>
+  <div id="resultado-descifrado">
+    <label for="mensaje-descifrado">Mensaje Descifrado:</label><br>
+    <input type="text" id="mensaje-cifrado" readonly>
+  </div>
+
+  <script src="index.js" type="module"></script>
+</body>
+
 </html>
