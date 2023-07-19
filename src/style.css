@@ -4,17 +4,21 @@
  
 body {
     display: center;
+    background-image: linear-gradient(to right bottom, #ff6f91, #ff8487, #ff9a83, #ffb086, #ffc490, #fec791, #fdca92, #fccd93, #fdc087, #feb37d, #ffa576, #ff9671);
+    /* fondo en degrade-centrado */
 }
 @font-face {
     font-family: 'OCR A Extended';
     src: url('fonts/OCRAExtended.ttf') format('truetype');
-}
+} 
+/* se agrego la fuente, con la carpeta en fonts */
 .title {
     color:#D4145A;
     font-family: 'OCR A Extended', sans-serif ;
     size: 20px;
 }
 
+/* punto para llamar la clase, en este caso titulo, color, tipo de letra, y tamaño */
 .Slogan {
     color: black;
     font-family: 'OCR A Extended', sans-serif ;
@@ -22,7 +26,7 @@ body {
 
 
 
-
+/* a continuacion se las configuraciones para la barra de navegacion */
 nav.menu-1 {
    display: flex;
    width: 100%;
@@ -30,14 +34,13 @@ nav.menu-1 {
     
 }
 
-
-
 nav.menu-1 .list {
     display: flex;
      padding: 0;
     margin: 0;
     list-style: none;
     justify-content: flex-start;
+    font-family: 'OCR A Extended', sans-serif ;
 }
 
 nav.menu-1 .list li {
@@ -60,47 +63,88 @@ nav.menu-1 .list a:hover {
 }
 
 
-
 nav.menu-1 .icon-bars {
     display:none;
     
 }
 
+/* ubica el cuadro de texto, el desplegable y cifrar */
 #cifrar-usuario input[type="text"] {
     width: 300px;
     height: 100px;
 
-
 }
-
+/* coloca el boton cifrar y el desplegable alineado sobre la misma del cuadro de texto */
 #cifrar-usuario {
     display: flex;
     justify-content: center;
-
+   
 }
 
+#descifrar-usuario {
+    display: flex;
+}
+/* coloco el cifrar mas abajo  */
 #descifrar-usuario input[type="text"] {
     width: 300px;
     height: 100px;
 
 }
 
-#resultado-cifrado input[type="text"] {
-    width: 300px;
-    height: 100px;
-
-}
-
-#resultado-descifrado input[type="text"] {
-    width: 300px;
-    height: 100px;
-
-}
-
+/* Coloca el espacio entre clave y cifrar  */
 .alineacion-vertical {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    align-items: center;
+    font-family: 'OCR A Extended', sans-serif ; 
 
 }
+/* color, borde, letra del boton */
+ button {
+    font-family: 'OCR A Extended', sans-serif ;
+    border-radius: 20px;
+    background-color: #db3450;
+    color: #ffffff
 
+ }
+
+ #mensaje-cifrado {
+    display: flex;
+    justify-content: center;
+ }
+
+ #mensaje-cifrado input[type="text"] {
+    width: 300px;
+    height: 100px;
+ }
+
+ h3 {
+    display: flex;
+    justify-content: center;
+    font-family: 'OCR A Extended', sans-serif ;
+    color:#D4145A;
+ }
+
+ p {
+    display: flex;
+    justify-content: center;
+    font-family: 'OCR A Extended', sans-serif ;
+ }
+
+
+    
+ #mensajeCifrado {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+ }
+ 
+ #mensajeCifrado input[type="text"]  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 100px;
+ }

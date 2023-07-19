@@ -63,62 +63,65 @@
           <option value="25">25</option>
           <option value="26">26</option>
         </select>
-      </div>
+      </div><br>
 
 
       <button onclick="cifrar ()">Cifrar</button>
     </div>
   </div>
 
-  <div>
-    <label for="mensaje-cifrado">Mensaje Cifrado:</label><br>
-    <input type="text" id="mensaje-cifrado" readonly>
+  <div id="mensajeCifrado">
+    <label for="mensajeCifrado">Mensaje Cifrado:</label><br>
+    <input type="text" id="mensajeCifrado" readonly>
   </div>
 
   <h3>Recuerda</h3>
   <p>Para cifrar o descifrar debes saber la clave secreta.</p><br>
 
   <div id="descifrar-usuario">
-    <input type="text" id="mensaje-usuario2" placeholder="Escribe tu mensaje a descifrar">
+    <input type="text" id="mensaje-usuario" placeholder="Escribe tu mensaje a descifrar">
+
+
+    <div class="alineacion-vertical">
+      <div><label for="clave">Clave:</label>
+        <select name="clave" id="clave">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+          <option value="10">10</option>
+          <option value="11">11</option>
+          <option value="12">12</option>
+          <option value="13">13</option>
+          <option value="14">14</option>
+          <option value="15">15</option>
+          <option value="16">16</option>
+          <option value="17">17</option>
+          <option value="18">18</option>
+          <option value="19">19</option>
+          <option value="20">20</option>
+          <option value="21">21</option>
+          <option value="22">22</option>
+          <option value="23">23</option>
+          <option value="24">24</option>
+          <option value="25">25</option>
+          <option value="26">26</option>
+        </select>
+      </div>
+
+
+      <button onclick="descifrar()">Descifrar</button>
+    </div>
   </div>
 
-  <div id="offset-desplegable2">
-    <label for="clave2">Clave:</label>
-    <select name="clave2" id="clave2">
-      <option value="1">1</option>
-      <option value="2">2</option>
-      <option value="3">3</option>
-      <option value="4">4</option>
-      <option value="5">5</option>
-      <option value="6">6</option>
-      <option value="7">7</option>
-      <option value="8">8</option>
-      <option value="9">9</option>
-      <option value="10">10</option>
-      <option value="11">11</option>
-      <option value="12">12</option>
-      <option value="13">13</option>
-      <option value="14">14</option>
-      <option value="15">15</option>
-      <option value="16">16</option>
-      <option value="17">17</option>
-      <option value="18">18</option>
-      <option value="19">19</option>
-      <option value="20">20</option>
-      <option value="21">21</option>
-      <option value="22">22</option>
-      <option value="23">23</option>
-      <option value="24">24</option>
-      <option value="25">25</option>
-      <option value="26">26</option>
-    </select>
-  </div>
-  <div id="send-descifrar">
-    <button onclick="descifrar ()">Descifrar</button>
-  </div>
-  <div id="resultado-descifrado">
+  <div 
     <label for="mensaje-descifrado">Mensaje Descifrado:</label><br>
-    <input type="text" id="mensaje-cifrado" readonly>
+    <input type="text" id="mensaje-descifrado" readonly>
   </div>
 
   <script src="index.js" type="module"></script>
