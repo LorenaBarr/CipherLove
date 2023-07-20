@@ -1,20 +1,22 @@
 #root {
     text-align: center;
 }
- 
+
 body {
     display: center;
-    background-image: linear-gradient(to right bottom, #ff6f91, #ff8487, #ff9a83, #ffb086, #ffc490, #fec791, #fdca92, #fccd93, #fdc087, #feb37d, #ffa576, #ff9671);
+    background-image: linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
     /* fondo en degrade-centrado */
 }
+
 @font-face {
     font-family: 'OCR A Extended';
     src: url('fonts/OCRAExtended.ttf') format('truetype');
-} 
+}
+
 /* se agrego la fuente, con la carpeta en fonts */
 .title {
-    color:#D4145A;
-    font-family: 'OCR A Extended', sans-serif ;
+    color: #D4145A;
+    font-family: 'OCR A Extended', sans-serif;
     font-size: 70px;
     size: 20px;
     margin-top: 50px;
@@ -23,7 +25,7 @@ body {
 /* punto para llamar la clase, en este caso titulo, color, tipo de letra, y tamaño */
 .Slogan {
     color: white;
-    font-family: 'OCR A Extended', sans-serif ;
+    font-family: 'OCR A Extended', sans-serif;
     font-size: 20px;
     margin-top: 50px;
 }
@@ -32,20 +34,20 @@ body {
 
 /* a continuacion se las configuraciones para la barra de navegacion */
 nav.menu-1 {
-   display: flex;
-   width: 100%;
-   justify-content: center;
-   margin-top: 50px;
-    
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-top: 50px;
+
 }
 
 nav.menu-1 .list {
     display: flex;
-     padding: 0;
+    padding: 0;
     margin: 0;
     list-style: none;
     justify-content: flex-start;
-    font-family: 'OCR A Extended', sans-serif ;
+    font-family: 'OCR A Extended', sans-serif;
 }
 
 nav.menu-1 .list li {
@@ -69,8 +71,8 @@ nav.menu-1 .list a:hover {
 
 
 nav.menu-1 .icon-bars {
-    display:none;
-    
+    display: none;
+
 }
 
 /* ubica el cuadro de texto, el desplegable y cifrar */
@@ -79,17 +81,19 @@ nav.menu-1 .icon-bars {
     height: 100px;
 
 }
+
 /* coloca el boton cifrar y el desplegable alineado sobre la misma del cuadro de texto */
 #cifrar-usuario {
     display: flex;
     justify-content: center;
     margin-top: 50px;
-   
+
 }
 
 #descifrar-usuario {
     display: flex;
 }
+
 /* coloco el cifrar mas abajo  */
 #descifrar-usuario input[type="text"] {
     width: 300px;
@@ -103,90 +107,95 @@ nav.menu-1 .icon-bars {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    font-family: 'OCR A Extended', sans-serif ; 
+    font-family: 'OCR A Extended', sans-serif;
     color: white;
     font-weight: bold;
 
 }
+
 /* color, borde, letra del boton */
- button {
-    font-family: 'OCR A Extended', sans-serif ;
+button {
+    font-family: 'OCR A Extended', sans-serif;
     border-radius: 20px;
     background-color: #db3450;
     color: #ffffff
+}
 
- }
-
- #mensaje-cifrado {
+#mensaje-cifrado {
     display: flex;
     justify-content: center;
- }
+    margin-top: 50px;
+}
 
- #mensaje-cifrado input[type="text"] {
+#mensaje-cifrado input[type="text"] {
     width: 300px;
     height: 100px;
- }
+}
 
- h3 {
+h3 {
     display: flex;
     justify-content: center;
-    font-family: 'OCR A Extended', sans-serif ;
+    font-family: 'OCR A Extended', sans-serif;
     font-size: 30px;
-    color:#D4145A;
- }
+    color: #D4145A;
+}
 
- p {
+p {
     display: flex;
     justify-content: center;
-    font-family: 'OCR A Extended', sans-serif ;
+    font-family: 'OCR A Extended', sans-serif;
     font-size: 20px;
     font-weight: bold;
- }
+    color: white;
+}
 
 
-    
- #mensajeCifrado {
+
+#mensajeCifrado {
     display: flex;
     justify-content: center;
-    
-    
- }
- 
- #mensajeCifrado input[type="text"]  {
+    margin-top: 20px;
+
+
+}
+
+#mensajeCifrado input[type="text"] {
     display: flex;
-    justify-content: center; */
-    align-items: center;
-   
+    justify-content: center;
     margin-top: 50px;
     width: 300px;
     height: 100px;
- }
- #mensajeCifrado label {
-    
+}
+
+#mensajeCifrado label {
+
     text-align: center;
     font-weight: bold;
     margin-top: 10px;
     font-family: 'OCR A Extended', sans-serif;
- }
+    color: white;
+}
 
- /* parte de descifrar */
+/* parte de descifrar */
 
- #descifrar-usuario input[type="text"] {
+#descifrar-usuario input[type="text"] {
     width: 300px;
     height: 100px;
 
 }
+
 /* coloca el boton cifrar y el desplegable alineado sobre la misma del cuadro de texto */
 #descifrar-usuario {
     display: flex;
     justify-content: center;
     margin-top: 50px;
-   
+
 }
 
 #descifrar-usuario {
     display: flex;
 }
+
 /* coloco el cifrar mas abajo  */
 #descifrar-usuario input[type="text"] {
     width: 300px;
@@ -200,42 +209,44 @@ nav.menu-1 .icon-bars {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    font-family: 'OCR A Extended', sans-serif ; 
+    font-family: 'OCR A Extended', sans-serif;
     color: white;
     font-weight: bold;
 
 }
+
 /* color, borde, letra del boton */
- button {
-    font-family: 'OCR A Extended', sans-serif ;
+button {
+    font-family: 'OCR A Extended', sans-serif;
     border-radius: 20px;
     background-color: #db3450;
     color: #ffffff
+}
 
- }
-
- #mensaje-descifrado {
+#mensaje-descifrado {
     display: flex;
     justify-content: center;
- }
+}
 
- #mensaje-descifrado input[type="text"] {
+#mensaje-descifrado input[type="text"] {
     width: 300px;
     height: 100px;
- }
- 
-  #mensaje-descifrado input[type="text"]  {
+}
+
+#mensaje-descifrado input[type="text"] {
     display: flex;
-    justify-content: center; */
+    justify-content: center;
     align-items: center;
-   
+
     margin-top: 50px;
     width: 300px;
     height: 100px;
- }
- #mensaje-descifrado label {
+}
+
+#mensaje-descifrado label {
     text-align: center;
     font-weight: bold;
     margin-top: 10px;
     font-family: 'OCR A Extended', sans-serif;
- }
+    color: white;
+}
