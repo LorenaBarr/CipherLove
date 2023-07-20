@@ -15,13 +15,17 @@ body {
 .title {
     color:#D4145A;
     font-family: 'OCR A Extended', sans-serif ;
+    font-size: 70px;
     size: 20px;
+    margin-top: 50px;
 }
 
 /* punto para llamar la clase, en este caso titulo, color, tipo de letra, y tamaño */
 .Slogan {
-    color: black;
+    color: white;
     font-family: 'OCR A Extended', sans-serif ;
+    font-size: 20px;
+    margin-top: 50px;
 }
 
 
@@ -31,6 +35,7 @@ nav.menu-1 {
    display: flex;
    width: 100%;
    justify-content: center;
+   margin-top: 50px;
     
 }
 
@@ -52,7 +57,7 @@ nav.menu-1 .list a {
     text-transform: uppercase;
     font-size: 16px;
     font-weight: bold;
-    color: black;
+    color: white;
     text-decoration: none;
     justify-content: center;
 
@@ -78,6 +83,7 @@ nav.menu-1 .icon-bars {
 #cifrar-usuario {
     display: flex;
     justify-content: center;
+    margin-top: 50px;
    
 }
 
@@ -98,6 +104,8 @@ nav.menu-1 .icon-bars {
     justify-content: space-between;
     align-items: center;
     font-family: 'OCR A Extended', sans-serif ; 
+    color: white;
+    font-weight: bold;
 
 }
 /* color, borde, letra del boton */
@@ -123,6 +131,7 @@ nav.menu-1 .icon-bars {
     display: flex;
     justify-content: center;
     font-family: 'OCR A Extended', sans-serif ;
+    font-size: 30px;
     color:#D4145A;
  }
 
@@ -130,6 +139,8 @@ nav.menu-1 .icon-bars {
     display: flex;
     justify-content: center;
     font-family: 'OCR A Extended', sans-serif ;
+    font-size: 20px;
+    font-weight: bold;
  }
 
 
@@ -137,14 +148,94 @@ nav.menu-1 .icon-bars {
  #mensajeCifrado {
     display: flex;
     justify-content: center;
-    align-items: center;
+    
     
  }
  
  #mensajeCifrado input[type="text"]  {
     display: flex;
-    justify-content: center;
+    justify-content: center; */
     align-items: center;
+   
+    margin-top: 50px;
     width: 300px;
     height: 100px;
+ }
+ #mensajeCifrado label {
+    
+    text-align: center;
+    font-weight: bold;
+    margin-top: 10px;
+    font-family: 'OCR A Extended', sans-serif;
+ }
+
+ /* parte de descifrar */
+
+ #descifrar-usuario input[type="text"] {
+    width: 300px;
+    height: 100px;
+
+}
+/* coloca el boton cifrar y el desplegable alineado sobre la misma del cuadro de texto */
+#descifrar-usuario {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+   
+}
+
+#descifrar-usuario {
+    display: flex;
+}
+/* coloco el cifrar mas abajo  */
+#descifrar-usuario input[type="text"] {
+    width: 300px;
+    height: 100px;
+
+}
+
+/* Coloca el espacio entre clave y cifrar  */
+.alineacion-vertical2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'OCR A Extended', sans-serif ; 
+    color: white;
+    font-weight: bold;
+
+}
+/* color, borde, letra del boton */
+ button {
+    font-family: 'OCR A Extended', sans-serif ;
+    border-radius: 20px;
+    background-color: #db3450;
+    color: #ffffff
+
+ }
+
+ #mensaje-descifrado {
+    display: flex;
+    justify-content: center;
+ }
+
+ #mensaje-descifrado input[type="text"] {
+    width: 300px;
+    height: 100px;
+ }
+ 
+  #mensaje-descifrado input[type="text"]  {
+    display: flex;
+    justify-content: center; */
+    align-items: center;
+   
+    margin-top: 50px;
+    width: 300px;
+    height: 100px;
+ }
+ #mensaje-descifrado label {
+    text-align: center;
+    font-weight: bold;
+    margin-top: 10px;
+    font-family: 'OCR A Extended', sans-serif;
  }
