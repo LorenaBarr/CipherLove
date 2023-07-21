@@ -1,27 +1,29 @@
-import cipher from './cipher.js';
+import { cifrar, descifrar}  from './cipher.js';
 
 // console.log(cipher);
 
-const boton = document.getElementById('btn-cifrar');
-const textarea = document.getElementById('mensaje-usuario'); // Sin .value aquí
-const selectMenuDesplegable = document.getElementById('clave');
+const botonCifrar = document.getElementById('btn-cifrar');
+const textareaCifrar = document.getElementById('mensaje-usuario'); // Sin .value aquí
+const selectMenuCifrar = document.getElementById('clave');
 
-function capturaTexto() {
-  const textoUsuario = textarea.value;
-  const valorClave = selectMenuDesplegable.value;
-  //console.log(textoUsuario, valorClave);
-}
+botonCifrar.addEventListener('click', () =>{
+  const textoUsuario = textareaCifrar.value;
+  const valorClave = selectMenuCifrar.value;
 
-boton.addEventListener('click', capturaTexto);
+  const mensajeCifrado = cifrar(textoUsuario, parseInt(valorClave));
+  document.getElementById('mensajeCifrado').value = mensajeCifrado;
+  
+});
 
-const boton2 = document.getElementById('descifro'); // Cambiar el ID aquí
-const textarea2 = document.getElementById('descifrar-usuario'); // Sin .value aquí
-const selectMenuDesplegable2 = document.getElementById('clave2');
+const botonDescifrar = document.getElementById('descifra'):
+const textareaDescifrar = document.getElementById('mensaje-usuario');
+const selectMenuDescifrar = document.getElementById('clave2');
 
-function capturaTexto2() {
-  const textoUsuario2 = textarea2.value; // Utilizar textarea2 aquí
-  const valorClave2 = selectMenuDesplegable2.value;
-  console.log(textoUsuario2, valorClave2);
-}
+botonDescifrar.addEventListener('click', () => {
+   const textoUsuario = textareaDescifrar.value;
+   const valorClave = selectMenuCifrar.value;
 
-boton2.addEventListener('click', capturaTexto2); // Cambiar el evento y función aquí
+   const mensajeDescifrado = descifrar(textoUsuario, parseInt(valorClave));
+   document.getElementById('mensaje-descifrado').value = mensajeDescifrado
+
+})
