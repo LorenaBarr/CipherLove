@@ -27,7 +27,7 @@ const selectMenuDescifrar = document.getElementById('clave2');
 botonDescifrar.addEventListener('click', () => {
 
   const textoUsuario = textareaDescifrar.value;
-  const valorClave = selectMenuCifrar.value;
+  const valorClave = selectMenuDescifrar.value;
 
   // const mensajeDescifrado = descifrar(textoUsuario, parseInt(valorClave));
   let mensajeDescifrado = textoUsuario + valorClave
