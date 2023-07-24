@@ -2,11 +2,12 @@ const cipher = {
   // ...
 };
 
-function cifrar(mensaje,clave){
+export function cifrar(string,offset){
+  return "miauuu"
 
 }
 
-function descifrar(mensaje, clave){
+function descifrar(string, offset){
   
 }
 
