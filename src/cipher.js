@@ -1,12 +1,16 @@
 const cipher = {
-  cifrar: function (string, offset) {
+
+  encode: (offset, string) => {
+    if (typeof offset !== 'number' || typeof string !== 'string') {
+      throw new TypeError('both arguments must be a number (offset) and a string (string)')
+    }
     let mensajeCifrado = '';
 
     for (let i = 0; i < string.length; i++) {
       let letra = string[i];
 
       if (letra.match(/[a-z]/i)) {
-        const codigo = letra.charCodeAt(i);
+        const codigo = letra.charCodeAt(0);
 
         if (codigo >= 65 && codigo <= 90) {
           // mayus
@@ -19,14 +23,18 @@ const cipher = {
 
       mensajeCifrado += letra;
     }
-
+    console.log(mensajeCifrado);
     return mensajeCifrado;
   },
 
-  descifrar: function (string, offset) {
+
+  decode: (offset, string) => {
+    if (typeof offset !== 'number' || typeof string !== 'string') {
+      throw new TypeError('both arguments must be a number (offset) and a string (string)')
+    }
     // se invierte el desplazamiento
     offset = -offset;
-    return this.cifrar(string, offset);
+    return cipher.encode(offset, string);
   }
 };
 

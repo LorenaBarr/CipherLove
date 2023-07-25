@@ -1,4 +1,4 @@
-import { cifrar, descifrar } from './cipher.js';
+import cipher from './cipher.js';
 
 const botonCifrar = document.getElementById('btn-cifrar');
 const textareaCifrar = document.getElementById('mensaje-usuario1'); // Sin .value aquí
@@ -7,7 +7,7 @@ const selectMenuCifrar = document.getElementById('clave');
 botonCifrar.addEventListener('click', () => {
   const textoUsuario = textareaCifrar.value;
   const valorClave = selectMenuCifrar.value;
-  const mensajeCifrado = cifrar(textoUsuario, parseInt(valorClave));
+  const mensajeCifrado = cipher.encode(parseInt(valorClave), textoUsuario);
   document.getElementById('mensaje-Cifrado').value = mensajeCifrado;
 });
 
@@ -18,7 +18,7 @@ const selectMenuDescifrar = document.getElementById('clave2');
 botonDescifrar.addEventListener('click', () => {
   const textoUsuario = textareaDescifrar.value;
   const valorClave = selectMenuDescifrar.value;
-  const mensajeDescifrado = descifrar(textoUsuario, parseInt(valorClave));
+  const mensajeDescifrado = cipher.decode(parseInt(valorClave), textoUsuario);
   document.getElementById('Kdescifrado').value = mensajeDescifrado;
 });
 
