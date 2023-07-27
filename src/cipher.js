@@ -11,19 +11,16 @@ const cipher = {
 
       if (letra.match(/[a-z]/i)) {
         const codigo = letra.charCodeAt(0);
+        const identificador = letra === letra.toUpperCase();
+        const inicio = identificador ? 65 : 97;
 
-        if (codigo >= 65 && codigo <= 90) {
-          // mayus
-          letra = String.fromCharCode(((codigo - 65 + offset) % 26) + 65);
-        } else if (codigo >= 97 && codigo <= 122) {
-          // minus
-          letra = String.fromCharCode(((codigo - 97 + offset) % 26) + 97);
-        }
+        letra = String.fromCharCode(((codigo - inicio + offset) % 26 + 26) % 26 + inicio);
+
       }
 
       mensajeCifrado += letra;
     }
-    console.log(mensajeCifrado);
+
     return mensajeCifrado;
   },
 
