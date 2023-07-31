@@ -8,6 +8,7 @@ body {
     /* fondo en degrade-centrado */
 }
 
+
 @font-face {
     font-family: 'OCR A Extended';
     src: url('fonts/OCRAExtended.ttf') format('truetype');
@@ -32,7 +33,7 @@ body {
 
 
 
-/* a continuacion se las configuraciones para la barra de navegacion */
+/*  configuraciones para la barra de navegacion, esta centra la lista */
 nav.menu-1 {
     display: flex;
     width: 100%;
@@ -41,6 +42,7 @@ nav.menu-1 {
 
 }
 
+/* los pone horizontal sin las viñetas */
 nav.menu-1 .list {
     display: flex;
     padding: 0;
@@ -50,10 +52,12 @@ nav.menu-1 .list {
     font-family: 'OCR A Extended', sans-serif;
 }
 
+/* les da espacio para que se vean separados */
 nav.menu-1 .list li {
     margin-left: 10px;
 }
 
+/* cambio de color, fuente, negrilla, decoracion */
 nav.menu-1 .list a {
     display: block;
     text-transform: uppercase;
@@ -65,51 +69,65 @@ nav.menu-1 .list a {
 
 }
 
+/* borde o linea cuando se pasa el cursor */
 nav.menu-1 .list a:hover {
     border-bottom: 4px solid #D4145A;
 }
 
 
-nav.menu-1 .icon-bars {
-    display: none;
-
-}
-
-/* ubica el cuadro de texto, el desplegable y cifrar */
+/* ubica el cuadro de texto, el desplegable y cifrar -input cifrar usuario- */
 #cifrar-usuario input[type="text"] {
     width: 300px;
     height: 100px;
+    border-radius: 20px;
+    border-width: 3px;
+    background-color: #FDE5EC;
+
 
 }
 
+@keyframes changeBorderColor {
+    0% {
+        border-color: #D4145A;
+    }
+
+
+    50% {
+        border-color: #DD58D6;
+    }
+
+
+    100% {
+        border-color: #97FEED;
+    }
+
+
+}
+
+
+#mensaje-usuario1 {
+    animation: changeBorderColor 3s infinite;
+    /* 3 segundos de duración, se repite infinitamente */
+}
+
+
 /* coloca el boton cifrar y el desplegable alineado sobre la misma del cuadro de texto */
 #cifrar-usuario {
-    display: flex;
     justify-content: center;
+    display: grid;
     margin-top: 50px;
 
 }
 
-#descifrar-usuario {
-    display: flex;
-}
-
-/* coloco el cifrar mas abajo  */
-#descifrar-usuario input[type="text"] {
-    width: 300px;
-    height: 100px;
-
-}
 
 /* Coloca el espacio entre clave y cifrar  */
 .alineacion-vertical {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
     font-family: 'OCR A Extended', sans-serif;
-    color: white;
+    color: rgb(255, 255, 255);
     font-weight: bold;
+    margin-top: 10px;
+    margin: 20px;
+    padding-left: 70px;
 
 }
 
@@ -121,15 +139,38 @@ button {
     color: #ffffff
 }
 
-#mensaje-cifrado {
-    display: flex;
-    justify-content: center;
-    margin-top: 50px;
+#clave {
+    font-family: 'OCR A Extended', sans-serif;
+
 }
 
-#mensaje-cifrado input[type="text"] {
+#clave2 {
+    font-family: 'OCR A Extended', sans-serif;
+    margin-top: 10px;
+
+}
+
+.alineacion-vertical2 {
+    font-family: 'OCR A Extended', sans-serif;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    padding-left: 70px;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+#descifra {
+    margin-top: 20px;
+}
+
+
+#mensaje-Cifrado input[type="text"] {
     width: 300px;
     height: 100px;
+    border-radius: 20px;
+    border-width: 3px;
+    background-color: #FDE5EC;
+
 }
 
 h3 {
@@ -149,104 +190,107 @@ p {
     color: white;
 }
 
-
-
-#mensajeCifrado {
+h4 {
     display: flex;
     justify-content: center;
-    margin-top: 20px;
-
-
-}
-
-#mensajeCifrado input[type="text"] {
-    display: flex;
-    justify-content: center;
-    margin-top: 50px;
-    width: 300px;
-    height: 100px;
-}
-
-#mensajeCifrado label {
-
-    text-align: center;
-    font-weight: bold;
-    margin-top: 10px;
     font-family: 'OCR A Extended', sans-serif;
-    color: white;
-}
+    font-size: 30px;
+    color: #D4145A;
 
-/* parte de descifrar */
+}
 
 #descifrar-usuario input[type="text"] {
     width: 300px;
     height: 100px;
-
-}
-
-/* coloca el boton cifrar y el desplegable alineado sobre la misma del cuadro de texto */
-#descifrar-usuario {
-    display: flex;
-    justify-content: center;
-    margin-top: 50px;
-
-}
-
-#descifrar-usuario {
-    display: flex;
-}
-
-/* coloco el cifrar mas abajo  */
-#descifrar-usuario input[type="text"] {
-    width: 300px;
-    height: 100px;
-
-}
-
-/* Coloca el espacio entre clave y cifrar  */
-.alineacion-vertical2 {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    font-family: 'OCR A Extended', sans-serif;
-    color: white;
-    font-weight: bold;
-
-}
-
-/* color, borde, letra del boton */
-button {
-    font-family: 'OCR A Extended', sans-serif;
     border-radius: 20px;
-    background-color: #db3450;
-    color: #ffffff
+    border-width: 3px;
+    background-color: #FDE5EC;
+
 }
 
-#mensaje-descifrado {
-    display: flex;
+@keyframes changeBorderColor {
+    0% {
+        border-color: #D4145A;
+    }
+
+
+    50% {
+        border-color: #DD58D6;
+    }
+
+
+    100% {
+        border-color: #97FEED;
+    }
+
+
+}
+
+
+#mensaje-usuario {
+    animation: changeBorderColor 3s infinite;
+    /* 3 segundos de duración, se repite infinitamente */
+}
+
+#descifrar-usuario {
     justify-content: center;
-}
-
-#mensaje-descifrado input[type="text"] {
-    width: 300px;
-    height: 100px;
-}
-
-#mensaje-descifrado input[type="text"] {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
+    display: grid;
     margin-top: 50px;
-    width: 300px;
-    height: 100px;
+
 }
 
-#mensaje-descifrado label {
-    text-align: center;
-    font-weight: bold;
-    margin-top: 10px;
+.input1 {
     font-family: 'OCR A Extended', sans-serif;
-    color: white;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    display: flex;
+    /* Agrega un contenedor flexible */
+    justify-content: center;
+    /* Centra los elementos horizontalmente */
+    align-items: center;
+    /* Centra los elementos verticalmente si es necesario */
+    flex-direction: column;
+    /* Alinea los elementos en una columna */
+    margin-top: 20px;
+    /* Agrega un margen superior si lo deseas */
+}
+
+#mensaje-Cifrado,
+#Kdescifrado {
+    width: 300px;
+    height: 100px;
+    border-radius: 20px;
+    border-width: 3px;
+    background-color: #D5FFE4;
+    margin-top: 10px;
+    /* Agrega un margen superior para separar los elementos */
+}
+
+/* pagina de CipherLove */
+
+/* Estilos generales para el cuerpo de la página */
+body {
+    font-family: 'OCR A Extended', sans-serif;
+    background-color: #f7f7f7;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    color: #D4145A;
+    font-size: 30px;
+}
+
+
+
+section {
+    display: flex;
+    /* Uso de flexbox para colocar los elementos horizontalmente */
+    align-items: center;
+    /* Centrar verticalmente los elementos */
+    margin: 10px;
+    padding: 40px;
+    margin-top: -70px;
+    line-height: 1.5;
+
 }
