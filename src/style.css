@@ -135,8 +135,10 @@ nav.menu-1 .list a:hover {
 button {
     font-family: 'OCR A Extended', sans-serif;
     border-radius: 20px;
+    font-size: 25px;
     background-color: #db3450;
     color: #ffffff
+    
 }
 
 #clave {
